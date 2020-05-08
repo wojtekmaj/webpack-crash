@@ -30,7 +30,7 @@ function Root() {
 }
 
 const isProduction = process.env.NODE_ENV === 'production';
-// This hot(), if removed, will cause the repro repo not to crash
+// This line, when changed to "const defaultExport = Root" will unbreak the app
 const defaultExport = isProduction ? Root : hot(Root);
 
 export default defaultExport;

@@ -40,6 +40,7 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
+        // This line, when changed to "include: /node_modules\/react-dom/," will unbreak the app
         include: /node_modules/,
         use: 'react-hot-loader/webpack',
       }
