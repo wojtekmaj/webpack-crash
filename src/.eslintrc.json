@@ -1,0 +1,22 @@
+{
+  "extends": "../.eslintrc.json",
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "jsx-a11y/label-has-associated-control": [
+      "error", {
+        "required": { "some": ["id", "nesting"] },
+        "controlComponents": ["Input", "Select"],
+        "depth": 3
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-boolean-value": ["error", "never", { "always": ["defaultValue"] }],
+    "react/jsx-curly-newline": "off",
+    "react/no-unescaped-entities": "off",
+    "react/require-default-props": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
